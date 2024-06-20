@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <div id="title"><img src="./assets/title.png">
+        </div>
+
+        <div id="lines">
+            <form class="form" onsubmit="submitHandler(); return false" name="loginForm">
+                <div>
+                    <label for="task">Task:</label><br />
+                    <textarea id="task" placeholder="task" rows="2" cols="40" name="task" required></textarea>
+
+                </div>
+                <div>
+                    <label for="dueDate">Due Date:</label><br />
+                    <input id="date" type="date" name="date" 
+                        required><br />
+                </div>
+                <div>
+                    <label for="targetTime">Target Time:</label><br />
+                    <input id="time" type="time" name="time" required>
+                </div><br />
+                <div>
+                    <button id="button" type="submit">Add Task</button>
+                    <button id="button" type="reset">Reset</button>
+                </div>
+
+            </form>  
+        
+        </div>
+        <div id="output-container">
+
+        </div>
+    </main>
+</body>
+</html>
